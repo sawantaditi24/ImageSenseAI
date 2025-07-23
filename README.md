@@ -4,7 +4,7 @@ An AI-powered web application to organize, search, and categorize images using O
 
 ---
 
-## 🛑 Problem Statement
+## Problem Statement
 
 In today’s digital world, professionals and job seekers often take countless screenshots of valuable content from platforms like LinkedIn—job postings, career advice, learning resources, and networking tips. Over time, these screenshots pile up in device galleries, becoming disorganized, hard to search, and nearly impossible to categorize or retrieve when needed.
 
@@ -24,7 +24,7 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ---
 
-## 🚀 Features
+## Features
 - **Upload LinkedIn screenshots** via a modern React frontend
 - **Store images in AWS S3** (original + thumbnail)
 - **Extract text from images** using Tesseract OCR
@@ -35,7 +35,7 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** React (TypeScript), Tailwind/CSS
 - **Backend:** FastAPI (Python)
 - **Database:** PostgreSQL
@@ -47,7 +47,7 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Clone the Repo
 ```bash
@@ -78,7 +78,7 @@ npm start
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 - **AWS S3:** Set credentials and bucket in backend config
 - **PostgreSQL:** Set DB URL in backend config
 - **OpenAI API Key:** Set in backend config
@@ -86,7 +86,7 @@ npm start
 
 ---
 
-## 🖼️ Usage
+## Usage
 1. **Upload**: Drag & drop or select screenshots in the web UI
 2. **Automatic Processing**: Backend extracts text, categorizes, stores in S3/DB, and indexes for search
 3. **Semantic Search**: Use the chat-style search bar to find screenshots by meaning, not just keywords
@@ -94,7 +94,7 @@ npm start
 
 ---
 
-## 🧩 Important Files & Structure
+## Important Files & Structure
 - `backend/app/api/routes/upload.py` — Upload, OCR, categorize, S3, FAISS
 - `backend/app/api/routes/search.py` — Semantic search endpoint
 - `backend/app/services/s3_service.py` — S3 upload/thumbnail logic
@@ -108,7 +108,7 @@ npm start
 
 ---
 
-## 🐞 Troubleshooting
+## Troubleshooting
 - **500 Internal Server Error on upload:** Check image file integrity, backend logs, and S3/DB credentials
 - **Images not displaying:** Ensure S3 bucket/object is public or use pre-signed URLs
 - **No search results:** Make sure FAISS index is populated (re-upload after backend restart)
@@ -116,12 +116,12 @@ npm start
 
 ---
 
-## 📄 License
+## License
 MIT
 
 ---
 
-## 🙏 Credits
+## Credits
 - [OpenAI](https://openai.com/)
 - [Hugging Face](https://huggingface.co/)
 - [FAISS](https://github.com/facebookresearch/faiss)
