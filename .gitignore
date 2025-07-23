@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node/React
+node_modules/
+build/
+dist/
+
+# Environment files
+.env
+.env.*
+
+# macOS system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Log files
+*.log
+
+# S3/Secrets
+*.pem
+*.key
