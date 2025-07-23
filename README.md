@@ -37,7 +37,8 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ## Image Sense App demo
 - **Landing Page** 
-<img width="1710" height="1107" alt="demo page" src="https://github.com/user-attachments/assets/27fd44ba-8e44-4ebb-bca7-feb4048765d9" />
+<img width="1708" height="864" alt="Screenshot 2025-07-23 at 4 36 52 PM" src="https://github.com/user-attachments/assets/caabe015-6dae-4615-851e-103f65f7d1e5" />
+
 - **Chat Bar** 
 <img width="1026" height="252" alt="search bar" src="https://github.com/user-attachments/assets/694ef253-b717-4be4-8978-063c4bd98a0f" />
 <img width="1705" height="679" alt="Screenshot 2025-07-23 at 3 54 35 PM" src="https://github.com/user-attachments/assets/f47b13fd-f589-4ce4-8dfe-2e6b4d7cd826" />
