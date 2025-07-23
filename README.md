@@ -35,6 +35,14 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ---
 
+## Image Sense App demo
+- **Landing Page** 
+<img width="1710" height="1107" alt="demo page" src="https://github.com/user-attachments/assets/27fd44ba-8e44-4ebb-bca7-feb4048765d9" />
+- **Chat bar**
+<img width="1026" height="252" alt="search bar" src="https://github.com/user-attachments/assets/694ef253-b717-4be4-8978-063c4bd98a0f" />
+
+---
+
 ## Tech Stack
 - **Frontend:** React (TypeScript), Tailwind/CSS
 - **Backend:** FastAPI (Python)
