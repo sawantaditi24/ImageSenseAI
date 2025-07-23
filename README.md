@@ -35,6 +35,13 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 
 ---
 
+## Architecture
+<img width="1536" height="1024" alt="ChatGPT Image Jul 23, 2025, 05_02_24 PM" src="https://github.com/user-attachments/assets/642d82f1-1380-4f6a-941e-e8134f063a5c" />
+
+
+
+---
+
 ## Image Sense App demo
 - **Landing Page** 
 <img width="1708" height="864" alt="Screenshot 2025-07-23 at 4 36 52 PM" src="https://github.com/user-attachments/assets/caabe015-6dae-4615-851e-103f65f7d1e5" />
