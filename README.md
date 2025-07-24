@@ -43,6 +43,9 @@ This app transforms a chaotic collection of screenshots into a smart, searchable
 ---
 
 ## Image Sense App demo
+- **Demo**
+You can check the live demo here: https://imagesenseai-1.onrender.com/
+
 - **Landing Page** 
 <img width="1708" height="864" alt="Screenshot 2025-07-23 at 4 36 52 PM" src="https://github.com/user-attachments/assets/caabe015-6dae-4615-851e-103f65f7d1e5" />
 
