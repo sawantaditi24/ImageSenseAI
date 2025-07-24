@@ -1,21 +1,21 @@
-# AI Screenshot Organizer
+# Imagesense AI
 
-An AI-powered web application to organize, search, and categorize images using OCR, LLMs, and semantic search.
+A generative AI powered web application to organize, search, and categorize images using OCR, LLMs, and semantic search.
 
 ---
 
 ## Problem Statement
 
-In today’s digital world, professionals and job seekers often take countless screenshots of valuable content from platforms like LinkedIn—job postings, career advice, learning resources, and networking tips. Over time, these screenshots pile up in device galleries, becoming disorganized, hard to search, and nearly impossible to categorize or retrieve when needed.
+In today’s digital world, students, professionals and job seekers often take countless screenshots of valuable content from platforms like LinkedIn job postings, career advice, learning resources, and networking tips. Over time, these screenshots pile up in device galleries, becoming disorganized, hard to search, and nearly impossible to categorize or retrieve when needed.
 
 **The problem:**
 - Important information (like job posts, learning resources, or job search strategies) gets lost in a sea of uncategorized images.
 - Manual organization is tedious and time-consuming.
-- Searching for a specific screenshot by keyword or topic is nearly impossible without text recognition and semantic understanding.
+- Searching for a specific screenshot by topic or semantic is nearly impossible without text recognition and semantic understanding.
 
 **This application solves the problem by:**
 - Automatically extracting text from screenshots using OCR.
-- Using AI to categorize each screenshot (e.g., Job Post, Learning Resource, Job Search Strategy).
+- Using LLMs to categorize each screenshot (e.g., Job Post, Learning Resource, Job Search Strategy).
 - Enabling fast, semantic search so users can find relevant screenshots by meaning, not just keywords.
 - Providing a modern, chat-style interface for intuitive searching and organization.
 
