@@ -26,4 +26,4 @@ async def get_search_suggestions():
     """
     Get search suggestions based on user history
     """
-    return {"message": "Search suggestions coming soon!"} 
+    return {"message": "Search suggestions feature coming soon."} 
