@@ -21,6 +21,6 @@ dist/
 # Log files
 *.log
 
-# S3/Secrets
+# S3/Secret keys
 *.pem
 *.key
