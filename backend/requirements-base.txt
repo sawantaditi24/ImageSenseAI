@@ -1,0 +1,4 @@
+# Build tools - must be installed first before requirements.txt
+setuptools>=69.0.0
+wheel>=0.43.0
+
