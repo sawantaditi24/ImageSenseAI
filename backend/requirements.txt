@@ -18,8 +18,10 @@ pillow==10.2.0
 pytesseract==0.3.12
 opencv-python==4.9.0.80
 numpy==1.23.5
+sentence-transformers==2.2.2
 
 # Vector database
+faiss-cpu==1.7.4
 # pinecone-client==2.2.4
 
 # Utilities

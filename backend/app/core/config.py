@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import List, Union
+from pydantic import field_validator
 import os
 
 class Settings(BaseSettings):
@@ -7,13 +8,26 @@ class Settings(BaseSettings):
     APP_NAME: str = "AI Screenshot Organizer"
     DEBUG: bool = False
     
-    # CORS
-    ALLOWED_ORIGINS: List[str] = [
+    # CORS - can be set via environment variable as comma-separated string
+    # Default includes production URLs
+    ALLOWED_ORIGINS: Union[str, List[str]] = [
         "http://localhost:3000",
         "http://localhost:3001",
         "http://127.0.0.1:3000",
-        "http://127.0.0.1:3001"
+        "http://127.0.0.1:3001",
+        "https://imagesenseai-1.onrender.com",
+        "https://imagesenseai.onrender.com"
     ]
+    
+    @field_validator('ALLOWED_ORIGINS', mode='before')
+    @classmethod
+    def parse_allowed_origins(cls, v):
+        """Parse comma-separated string or return list as-is"""
+        if isinstance(v, str):
+            # Parse comma-separated origins from env
+            origins = [origin.strip() for origin in v.split(",") if origin.strip()]
+            return origins
+        return v
     
     # AWS S3
     AWS_ACCESS_KEY_ID: str = ""

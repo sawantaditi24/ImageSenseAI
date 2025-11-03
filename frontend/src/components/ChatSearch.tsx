@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ScreenshotResult from './ScreenshotResult';
 import './ChatSearch.css';
 import { FiSend } from 'react-icons/fi';
+import api from '../services/api';
 
 interface Screenshot {
   id: number;
@@ -37,17 +38,14 @@ const ChatSearch: React.FC = () => {
     setMessages((prev) => [...prev, userMessage]);
     setLoading(true);
     try {
-      const response = await fetch('/api/v1/search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: input }),
-      });
-      const data = await response.json();
+      const response = await api.post('/api/v1/search', { query: input });
+      const data = response.data;
       // Defensive: ensure results is always an array
       const results = Array.isArray(data.results) ? data.results : [];
       const resultMessage: ResultMessage = { type: 'result', content: results };
       setMessages((prev) => [...prev, resultMessage]);
     } catch (error) {
+      console.error('Search error:', error);
       setMessages((prev) => [...prev, { type: 'result', content: [] }]);
     } finally {
       setLoading(false);
