@@ -12,6 +12,10 @@ interface Screenshot {
   upload_time?: string;
 }
 
+interface SearchResponse {
+  results: Screenshot[];
+}
+
 interface UserMessage {
   type: 'user';
   content: string;
@@ -38,10 +42,10 @@ const ChatSearch: React.FC = () => {
     setMessages((prev) => [...prev, userMessage]);
     setLoading(true);
     try {
-      const response = await api.post('/api/v1/search', { query: input });
+      const response = await api.post<SearchResponse>('/api/v1/search', { query: input });
       const data = response.data;
       // Defensive: ensure results is always an array
-      const results = Array.isArray(data.results) ? data.results : [];
+      const results = Array.isArray(data?.results) ? data.results : [];
       const resultMessage: ResultMessage = { type: 'result', content: results };
       setMessages((prev) => [...prev, resultMessage]);
     } catch (error) {
