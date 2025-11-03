@@ -1,4 +1,4 @@
-# Nixpacks configuration for Railway
+# Nixpacks configuration for Koyeb/Railway
 # This ensures Python 3.12 and Tesseract are available
 
 [phases.setup]
@@ -11,5 +11,5 @@ cmds = [
 ]
 
 [start]
-cmd = "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+cmd = "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"
 
